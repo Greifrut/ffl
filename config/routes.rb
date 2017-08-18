@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-get '/home'
-resources 'home'
-root '/home
+
+  get 'home/index'
+  resources 'home'
+  root 'home#index'
+
 end
