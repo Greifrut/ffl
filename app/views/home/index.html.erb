@@ -1,12 +1,17 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset=utf-8>
-  <title>`echo $TM_FILENAME|cut -d. -f1`</title>
-</head>
-<body>
 
+<% form_for :home, url:'/home/index' do |f| %> 
+<p>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+</p>
 
+<p>
+  <%= f.label :password %>
+  <%= f.text_field :password %>
+</p>
 
-</body>
-</html>
+<p>
+  <%= f.submit 'Войти' %>
+</p>
+
+<% end %>
